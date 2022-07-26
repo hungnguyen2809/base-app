@@ -14,10 +14,10 @@ export const setDataStorage = async (key: string, data: any) => {
   }
 };
 
-export const getDataStorage = async (key: string) => {
+export const getDataStorage = async <T = any>(key: string): Promise<T | null> => {
   try {
     const value = await AsyncStorage.getItem(key);
-    return value !== null ? JSON.parse(value) : null;
+    return value ? JSON.parse(value) : null;
   } catch (error) {
     return null;
   }

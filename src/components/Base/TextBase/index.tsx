@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, TextProps } from 'react-native';
 
-export interface TextAppProps extends TextProps {
+export interface TextBaseProps extends TextProps {
   children: React.ReactNode;
 }
 
-const _TextApp = ({ children, style, ...propsRest }: TextAppProps, ref: React.LegacyRef<Text>) => {
+const _TextBase = (
+  { children, style, ...propsRest }: TextBaseProps,
+  ref: React.LegacyRef<Text>,
+) => {
   return (
     <Text ref={ref} style={[styles.text, style]} allowFontScaling={false} {...propsRest}>
       {children}
@@ -13,7 +16,7 @@ const _TextApp = ({ children, style, ...propsRest }: TextAppProps, ref: React.Le
   );
 };
 
-export const TextApp = React.forwardRef(_TextApp);
+export const TextBase = React.forwardRef(_TextBase);
 
 const styles = StyleSheet.create({
   text: {

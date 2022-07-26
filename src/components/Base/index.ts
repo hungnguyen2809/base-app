@@ -1,3 +1,3 @@
-export * from './TextApp';
-export * from './TextInputApp';
+export * from './TextBase';
+export * from './TextInputBase';
 export * from './TextError';

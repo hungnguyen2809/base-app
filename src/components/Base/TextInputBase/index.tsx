@@ -19,7 +19,7 @@ export interface TextInputBaseProps extends TextInputProps {
   disabledPressRight?: boolean;
 }
 
-const _TextInputApp = (
+const _TextInputBase = (
   {
     iconLeft,
     iconRight,
@@ -49,7 +49,7 @@ const _TextInputApp = (
   );
 };
 
-export const TextInputApp = React.forwardRef(_TextInputApp);
+export const TextInputBase = React.forwardRef(_TextInputBase);
 
 const styles = StyleSheet.create({
   container: {

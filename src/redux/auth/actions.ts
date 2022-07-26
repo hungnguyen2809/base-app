@@ -1,5 +1,6 @@
 import { createAction, createAsyncThunk } from '@reduxjs/toolkit';
 import { getMessageError } from 'src/utils/common';
+import { clearAllStorage } from 'src/utils/storage';
 import { AuthLogin } from './type';
 
 //Viết fake tạm ở đây
@@ -31,6 +32,12 @@ export const actionAuthLogin = createAsyncThunk('auth/actionAuthLogin', async (d
   } catch (error) {
     throw new Error(getMessageError(error));
   }
+});
+
+export const actionAuthLogout = createAsyncThunk('auth/actionAuthLogout', async () => {
+  await clearAllStorage();
+
+  return {};
 });
 
 export const actionAuthSetToken = createAction<AuthLogin>('auth/actionAuthSetToken');

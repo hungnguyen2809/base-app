@@ -1,33 +1,44 @@
-import { NavigationContainer, NavigationContainerRef } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
-import { useAppSelector } from 'src/app/hooks';
+import { useAppDispatch, useAppSelector } from 'src/app/hooks';
+import { appLotties } from 'src/assets';
+import { actionAuthSetToken } from 'src/redux/auth/actions';
 import { selectAuthToken } from 'src/redux/auth/selectors';
+import { getDataStorage, STORAGE_KEY } from 'src/utils/storage';
 import MainStack from './MainStack';
 import OnboardingStack from './OnboardingStack';
 
-const navigationRef = React.createRef<NavigationContainerRef<any>>();
-export const navigation = { ...navigationRef.current } as NavigationContainerRef<any>;
+const LottieOnboarding: React.FC = () => {
+  return <LottieView source={appLotties.truck} autoPlay loop />;
+};
+
+const MainNavigation: React.FC = () => {
+  const token = useAppSelector(selectAuthToken);
+
+  return token ? <MainStack /> : <OnboardingStack />;
+};
 
 const AppContainer: React.FC = () => {
-  const isLogin = useAppSelector(selectAuthToken);
+  const dispatch = useAppDispatch();
 
   const [showLottie, setShowLottie] = useState<boolean>(true);
 
-  useEffect(() => {
+  const onReady = async () => {
+    const userInfo = await getDataStorage(STORAGE_KEY.ACCESS_TOKEN);
+    if (userInfo) {
+      dispatch(actionAuthSetToken(userInfo));
+    }
+
     setTimeout(() => {
       setShowLottie(false);
     }, 3000);
-  }, []);
-
-  if (showLottie) {
-    return <LottieView source={require('src/assets/lotties/truck.json')} autoPlay loop />;
-  }
+  };
 
   return (
-    <NavigationContainer ref={navigationRef}>
-      {isLogin ? <MainStack /> : <OnboardingStack />}
+    <NavigationContainer onReady={onReady}>
+      {showLottie ? <LottieOnboarding /> : <MainNavigation />}
     </NavigationContainer>
   );
 };

@@ -123,6 +123,7 @@ const LoginScreen: React.FC = () => {
                   value={value}
                   onChangeText={onChange}
                   onBlur={onBlur}
+                  mode="outlined"
                   style={styles.contentInput}
                   maxLength={20}
                   label="Mật khẩu"
