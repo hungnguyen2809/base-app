@@ -4,6 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider as StoreProvider } from 'react-redux';
 import { store } from 'src/app/store';
 import AppContainer from 'src/navigation';
+import { NotificationProvider } from 'src/notifications';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
           <AppContainer />
         </SafeAreaProvider>
       </PaperProvider>
+      <NotificationProvider />
     </StoreProvider>
   );
 };

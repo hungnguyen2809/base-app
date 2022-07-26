@@ -36,43 +36,54 @@
 		</dict>
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSBluetoothAlwaysUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSBluetoothPeripheralUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSCalendarsUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSCameraUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSContactsUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSFaceIDUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSLocationAlwaysUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSLocationWhenInUseUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSMicrophoneUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSMotionUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSPhotoLibraryUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSPhotoLibraryAddUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSRemindersUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSSpeechRecognitionUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSSiriUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
-  <key>NSUserTrackingUsageDescription</key>
-  <string>$(PRODUCT_NAME) required permission</string>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSContactsUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSMotionUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSSiriUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>$(PRODUCT_NAME) required permission</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AntDesign.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -87,13 +98,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>AntDesign.ttf</string>
-		<string>FontAwesome.ttf</string>
-		<string>Ionicons.ttf</string>
-		<string>MaterialIcons.ttf</string>
-		<string>MaterialCommunityIcons.ttf</string>
-	</array>
 </dict>
 </plist>
