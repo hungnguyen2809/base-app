@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "570428250258",
-    "project_id": "insta-166b8",
-    "storage_bucket": "insta-166b8.appspot.com"
+    "project_number": "988881901401",
+    "project_id": "baseapp-6b872",
+    "storage_bucket": "baseapp-6b872.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:570428250258:android:af566ff6ff19bfba8fee4b",
+        "mobilesdk_app_id": "1:988881901401:android:94526996d8203b08df9e48",
         "android_client_info": {
-          "package_name": "com.hungnguyen2809.insta"
+          "package_name": "com.baseapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "570428250258-vthcc252endpk2jc0gd3h08c2k085qdn.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.hungnguyen2809.insta",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
-          }
-        },
-        {
-          "client_id": "570428250258-6pvtj8kj8du93m899vi3dupsb06g32n7.apps.googleusercontent.com",
+          "client_id": "988881901401-c5qgk30laqr9gbkbdhqsriulvcbqab4t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAC8fdeSsUSUa1R2lKJ9tx0GFGoRE8BTWw"
+          "current_key": "AIzaSyAS5zJHYTo5ZvtHC9LwDK0_83IQYbQ1UoE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "570428250258-6pvtj8kj8du93m899vi3dupsb06g32n7.apps.googleusercontent.com",
+              "client_id": "988881901401-c5qgk30laqr9gbkbdhqsriulvcbqab4t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
